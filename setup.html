@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>Portfolio Setup</title>
+<style>
+body{margin:0;background:#0b1220;color:#f6f8fb;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+.card{max-width:520px;width:100%;background:#111a2e;border:1px solid #25324c;border-radius:20px;padding:22px;box-sizing:border-box}
+h1{font-size:22px;margin:0 0 8px}p{color:#9fb0cc;line-height:1.45}.ok{color:#37d67a}.err{color:#ff6b6b}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Portfolio Setup</h1>
+<p id="msg">Importing the shared portfolio into Safari…</p>
+</div>
+<script>
+const IV="uWFv3Mns0t_9sLnS";
+const DATA="p6OuHR6uRwWHijyN6i85ipXD8UTS0SHkbtVr69iftU0IeZLjClyavVZdXWTOx7eUQu_mYJX0ZnYA_-uXnz1R8uo3h_D80AMoHwaOPght1W26vHCXsRZUFZvHF9QgrwsZegwxf0B11tdgH67Y-Akbop4EcuF9CMiNL7I7QayTeUiEZ6SAbbYAE5RQ4f3KZr8boh9re5X_ab-IxRS2geFDc7HWcl8aIAPUv0xTl3LVCkjjSZeWtykr8QJzvGbAjn5lpaM7gwekK8adcZiwpuPTOxVXd0o-Zb52ir6TfmvhzJBb9CHN1Ag-xAXVG17bbKOLIC39lFE1JUlwph6v91TeFIegVnlw3Iu5ehI4w0nAMOCiuPDHDX9RUapiQA2M1zIHQ2k--cAk4ttz9NcYvCTKiuD4YfdUYGK2SL3VGMNBuiQUMQjuKTKMEVtKTPvZc_E653odEl6VlipoQ5FBQN2uiglBxWBnAFv6QdU7M6CLxrMcTejUivJb-y-Lm_Y-d4YF3y2SLPQ7YmRaLu-RTQEiiXs7nkDiCs54fcI4ZTB1xz7DcgufHbVA5Q20YU8ptwyObXDTyFyIwg6bSREUYl0LX3bmp_tD_Fst4rwZZ1PbagDPCfy3_SlqqQ5v9aHsDlUSFTc2mle691QZjiz3B6Lzb9aKEwpLDUw2ZjTdtULy-qyW7WFFs8QmBTF1W6DVo-Iqqon_gN_F6XRWkrtoGEMtRw1207HgFSYLprwVlaawrmDsujVoKqWIwSQ1IVDQVzb5M2DmrFF3I8e8lPOK7HheEduVBmBOwKNT_LFN8FXFYW5naWwP8VLitBZ-NQlC2g0yGjYPw-pg6IMHUKLYtqjc_qMczownUsA4y2L1eIZA9urpDKhY8g1vkwAU6_iEH134_aRloCSGlYdDeqqvmSCPRQboniz-utYhZrUFhikW12lc7EKJ2exirqlzKbRHXld42X2UqZUEhdy7Y2KHV7H-Skv4CC6wyFdJcVpKhcxgY_T_xmfKfca4gOX6pL-z1Y91tpDlQD2npHLfg5JFKoBU5ctsV5cHZl_McFWPAw2MpYJsyu7UQBCWh8CLTkJsY6seZyhr_gf8bELuUKw66L6ewYM4XoU75zyxCc0-17xrXqj5POZnWWsBSZQTjo-nbSbj8lu6PU9fW_cRHS_rKt_MbLZ0Jn3U69-k8WnQt7C3mVjdwKmRT3ePv2qsTNVRQWnguWYOs3lp61UTXxesZWSMDtZQEV_0Zn65rqvQfNMIqtowDXMlOeOzzjo6I341W5tf_ChtORXYtYKV2aE1xWn7xkwaONZyB7WzjdKLcRFuVOOoUk65b1y5hqJdb_VEIvKGQJ3IhLHcVY4Coo31OM7F4sconZmSLrtkz_5zitwekYlgjNivrB1_uqaM3dgbvzRfoAw9jCeRMvWmH9yMVCNOVOoIk7ray5SGNPHOkoH3t9OMM5j7G7hxgYQuslN9vMu-IUn4n9V4fFkYZmkGdIf9qn5FoaMstlb47GcWVvw97vsh-IAM3DUPJmX8qnVewM_eP-XK080UPZWGz2baSc11LrNuT5PPNVyMEAideBuJfzTgtjZzNC2udnzbobjJ23nshsEOKGXmD30MDUPUYH4etX3gHLql9g5oHbaued-tvd33GPRJIKpbMZruzk0GhwH88_BJnfzy2qljZ9uyiXcYeqRkK59aWQliCIyq_UA8wCzFtIQS";
+function b64u(s){s=s.replace(/-/g,"+").replace(/_/g,"/");while(s.length%4)s+="=";const b=atob(s),a=new Uint8Array(b.length);for(let i=0;i<b.length;i++)a[i]=b.charCodeAt(i);return a}
+function cookieSet(k,v){try{document.cookie=encodeURIComponent(k)+"="+encodeURIComponent(v)+"; Max-Age=31536000; Path=/-portfolio-dashboard/; SameSite=Lax; Secure"}catch(e){}}
+(async()=>{
+  const msg=document.getElementById("msg");
+  try{
+    const m=location.hash.match(/(?:^#|[&#])k=([^&]+)/);
+    if(!m)throw Error("Missing setup key");
+    const key=b64u(decodeURIComponent(m[1]));
+    const cryptoKey=await crypto.subtle.importKey("raw",key,{name:"AES-GCM"},false,["decrypt"]);
+    const plain=await crypto.subtle.decrypt({name:"AES-GCM",iv:b64u(IV)},cryptoKey,b64u(DATA));
+    const json=new TextDecoder().decode(plain);
+    const holdings=JSON.parse(json);
+    if(!Array.isArray(holdings)||holdings.length!==19)throw Error("Invalid portfolio");
+    localStorage.setItem("portfolio_holdings",json);
+    cookieSet("portfolio_holdings",json);
+    if(localStorage.getItem("portfolio_holdings")!==json)throw Error("Safari blocked storage");
+    msg.className="ok";
+    msg.textContent="19 holdings imported. Opening the portfolio…";
+    setTimeout(()=>location.replace("Portfolio_v13_1.html"),700);
+  }catch(e){
+    msg.className="err";
+    msg.textContent="Could not import the portfolio. Open this link directly in Safari. "+e.message;
+  }
+})();
+</script>
+</body>
+</html>
